@@ -17,9 +17,9 @@ Bu proje, React, TypeScript ve Vite kullanılarak oluşturulmuş, modern, kullan
 
 ## Kullanılan Teknolojiler
 
-*   **React** (v18+) - Kullanıcı arayüzü kütüphanesi
-*   **TypeScript** - JavaScript için statik tip denetleyicisi
-*   **Vite** - Hızlı ve modern frontend build aracı
+*   **React** (v18+) 
+*   **TypeScript** 
+*   **Vite** 
 *   **CSS**
 
 
