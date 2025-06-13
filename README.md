@@ -1,54 +1,60 @@
-# React + TypeScript + Vite
+# Çok Adımlı Etkinlik Kayıt Formu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React, TypeScript ve Vite kullanılarak oluşturulmuş, modern, kullanıcı dostu ve güvenlik odaklı çok adımlı bir etkinlik kayıt formudur. Kullanıcıların bir etkinliğe kaydolurken kişisel bilgilerini, etkinlik tercihlerini ve özel gereksinimlerini adım adım girmelerini sağlar.
 
-Currently, two official plugins are available:
+<!-- ![Etkinlik Kayıt Formu Ekran Görüntüsü](https://via.placeholder.com/600x400.png?text=Proje+Ekran+Görüntüsü+Buraya)
+*(Projenizin bir ekran görüntüsünü buraya ekleyin)* -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Özellikler
 
-## Expanding the ESLint configuration
+*   **Çok Adımlı Form Yapısı**: Kullanıcı deneyimini iyileştirmek için kayıt süreci mantıksal adımlara bölünmüştür.
+    *   Adım 1: Kişisel Bilgiler
+    *   Adım 2: Etkinlik Detayları ve Tercihler
+    *   Adım 3: Özel Gereksinimler ve Politika Onayı
+    *   Adım 4: Gözden Geçirme ve Gönderme
+*   **İlerlemeli Form Doğrulama (Client-Side)**: Her adımda anlık geri bildirimlerle kullanıcı girdileri doğrulanır.
+*   **Dinamik İlerleme Çubuğu**: Kullanıcının formdaki mevcut konumunu gösterir.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Kullanılan Teknolojiler
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+*   **React** (v18+) - Kullanıcı arayüzü kütüphanesi
+*   **TypeScript** - JavaScript için statik tip denetleyicisi
+*   **Vite** - Hızlı ve modern frontend build aracı
+*   **CSS3** - Stil ve animasyonlar için (Özel CSS, herhangi bir UI kütüphanesi kullanılmadı)
+*   **ESLint** & **Prettier** (Vite şablonu ile gelir) - Kod kalitesi ve formatlama
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Kurulum ve Başlatma
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
+
+1.  **Depoyu Klonlayın:**
+    ```bash
+    git clone https://github.com/eeyll18/multi-step-form.git
+    cd multi-step-form
+    ```
+
+2.  **Bağımlılıkları Yükleyin:**
+    ```bash
+    npm install
+    # veya
+    yarn install
+    ```
+
+## Ön Gereksinimler
+
+Bu projeyi yerel makinenizde çalıştırmadan önce aşağıdaki yazılımların sisteminizde kurulu olduğundan emin olun:
+
+*   **Node.js**: `v16.x` veya daha üzeri önerilir. (Node.js, npm'i de içerir).
+    *   Node.js'i [nodejs.org](https://nodejs.org/) adresinden indirebilirsiniz.
+*   **npm** (Node Package Manager): Node.js ile birlikte gelir. `v8.x` veya daha üzeri önerilir.
+    *   Alternatif olarak **Yarn** (`v1.22.x` veya daha üzeri) da kullanabilirsiniz.
+
+Kurulu olup olmadıklarını ve versiyonlarını kontrol etmek için terminalinizde aşağıdaki komutları çalıştırabilirsiniz:
+```bash
+node -v
+npm -v
+# veya:
+yarn --version
+
