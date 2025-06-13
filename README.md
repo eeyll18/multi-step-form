@@ -20,8 +20,7 @@ Bu proje, React, TypeScript ve Vite kullanılarak oluşturulmuş, modern, kullan
 *   **React** (v18+) - Kullanıcı arayüzü kütüphanesi
 *   **TypeScript** - JavaScript için statik tip denetleyicisi
 *   **Vite** - Hızlı ve modern frontend build aracı
-*   **CSS3** - Stil ve animasyonlar için (Özel CSS, herhangi bir UI kütüphanesi kullanılmadı)
-*   **ESLint** & **Prettier** (Vite şablonu ile gelir) - Kod kalitesi ve formatlama
+*   **CSS**
 
 
 ## Kurulum ve Başlatma
