@@ -1,0 +1,180 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Üstten başlasın */
+  min-height: 100vh;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.app-container {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: calc(100% - 22px); /* padding ve border hesaba katıldı */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* padding ve border width'e dahil */
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button[type="button"] {
+  background-color: #6c757d;
+}
+
+button[type="button"]:hover {
+  background-color: #545b62;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation-buttons button:only-child {
+  margin-left: auto; /* Tek buton varsa sağa yasla (İleri veya Gönder) */
+}
+
+
+p[style*="color: red"] { /* Hata mesajları için */
+  font-size: 0.9em;
+  margin-top: 3px;
+}
+
+/* review secton step 4 */
+.review-section {
+  border: 1px solid #eee;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.review-section h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.review-section p {
+  margin: 5px 0;
+}
+
+/* Progress Bar */
+.progress-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.progress-step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  position: relative; /* Çizgiler için */
+}
+
+.progress-step.active {
+  background-color: #007bff;
+}
+.progress-step.current {
+  border: 2px solid #0056b3; /* Aktif adıma vurgu */
+  transform: scale(1.1);
+}
+
+/* Adımlar arası çizgiler (isteğe bağlı) */
+.progress-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(150px - 30px); /* Aradaki boşluğa göre ayarla, kabaca */
+    height: 2px;
+    background-color: #ddd;
+    z-index: -1;
+}
+.progress-step.active:not(:last-child)::after {
+    background-color: #007bff;
+}
+
+/* Responsive iyileştirmeler */
+@media (max-width: 600px) {
+  .app-container {
+    margin: 10px;
+    padding: 15px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: calc(100% - 20px);
+  }
+  .progress-step:not(:last-child)::after {
+      width: calc(100vw / 5 - 15px); /* Daha dinamik bir çizgi uzunluğu */
+  }
+}
