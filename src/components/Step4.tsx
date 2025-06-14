@@ -23,7 +23,7 @@ const getMealPreferenceLabel = (
 ): string => {
   switch (preference) {
     case "none":
-      return "ÖZel bir tercih yok.";
+      return "Özel bir tercih yok.";
     case "vegan":
       return "Vegan";
     case "vegetarian":
