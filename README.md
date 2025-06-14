@@ -23,6 +23,37 @@ Bu proje, React, TypeScript ve Vite kullanılarak oluşturulmuş, modern, kullan
 *   **CSS**
 
 
+## 🎨 Styling & User Interface
+
+The application's user interface is designed to be modern, responsive, and engaging, with a focus on providing a smooth user experience for the multi-step registration form.
+
+### Key Features:
+
+*   **Responsive Design:**
+    *   The layout adapts fluidly to various screen sizes (desktops, tablets, and mobile phones) using media queries.
+    *   Key breakpoints are defined at `768px`, `600px`, `480px`, and `360px` to ensure optimal viewing and interaction on different devices, with adjustments to padding, font sizes, and element layouts.
+
+*   **Animations & Transitions:**
+    *   **Custom Keyframe Animations:** Includes custom CSS keyframe animations:
+        *   `fadeIn`: For general element appearance.
+        *   `slideInFromRight/Left`: (Defined, can be used for more specific directional entries).
+        *   `pulse`: For highlighting interactive elements like the current progress step.
+        *   `shake`: Provides immediate visual feedback for invalid input fields.
+    *   **Interactive Elements:** Buttons and input fields feature hover and active/focus state transitions (e.g., transform, box-shadow changes, gradient shifts) for better user feedback.
+
+*   **CSS Custom Properties (Variables):**
+    *   A comprehensive set of CSS variables (e.g., `--primary-color`, `--error-color`, `--border-radius`, `--box-shadow`) are defined at the `:root` level.
+    *   This allows for easy theming, consistent styling across the application, and simpler maintenance of the color palette and common dimensional values.
+
+*   **Enhanced User Experience (UX):**
+    *   **Clear Visual Hierarchy:** Appropriate use of headings, spacing, font weights, and distinct section styling.
+    *   **Input Feedback:** Input fields show distinct styles on focus and provide immediate visual feedback (border color, box-shadow, shake animation) for validation errors. Error messages are styled for clarity.
+    *   **Interactive Progress Bar:** The progress bar dynamically fills as the user advances through steps, with the current step clearly highlighted and animated with a `pulse` effect.
+
+
+
+
+
 ## Kurulum ve Başlatma
 
 
