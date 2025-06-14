@@ -2,7 +2,8 @@
 
 Bu proje, React, TypeScript ve Vite kullanılarak oluşturulmuş, modern, kullanıcı dostu ve güvenlik odaklı çok adımlı bir etkinlik kayıt formudur. Kullanıcıların bir etkinliğe kaydolurken kişisel bilgilerini, etkinlik tercihlerini ve özel gereksinimlerini adım adım girmelerini sağlar.
 
-![](./images/multistep1.png)
+![]<img src="./images/multistep1.png" alt="Kişisel Bilgiler Formu" width="300"/>
+
 ![](./images/multistep2.png)
 ![](./images/multistep3.png)
 ## Özellikler
