@@ -24,34 +24,32 @@ Bu proje, React, TypeScript ve Vite kullanılarak oluşturulmuş, modern, kullan
 *   **CSS**
 
 
-## Styling & User Interface
+## Stil ve Kullanıcı Arayüzü
 
-The application's user interface is designed to be modern, responsive, and engaging, with a focus on providing a smooth user experience for the multi-step registration form.
+Uygulamanın kullanıcı arayüzü, çok adımlı kayıt formu için sorunsuz bir kullanıcı deneyimi sunmaya odaklanarak modern, responsive olacak şekilde tasarlanmıştır.
 
-### Key Features:
+### Ana Özellikler:
 
-*   **Responsive Design:**
-    *   The layout adapts fluidly to various screen sizes (desktops, tablets, and mobile phones) using media queries.
-    *   Key breakpoints are defined at `768px`, `600px`, `480px`, and `360px` to ensure optimal viewing and interaction on different devices, with adjustments to padding, font sizes, and element layouts.
+*   **Duyarlı Tasarım (Responsive Design):**
+    *   Düzen, medya sorguları (media queries) kullanılarak çeşitli ekran boyutlarına (masaüstü, tablet ve cep telefonları) akıcı bir şekilde uyum sağlar.
+    *   Farklı cihazlarda optimum görüntüleme ve etkileşim sağlamak için `768px`, `600px`, `480px` ve `360px` gibi ana kesme noktaları (breakpoints) tanımlanmıştır; bu noktalarda dolgu (padding), yazı tipi boyutları ve eleman düzenlerinde ayarlamalar yapılır.
 
-*   **Animations & Transitions:**
-    *   **Custom Keyframe Animations:** Includes custom CSS keyframe animations:
-        *   `fadeIn`: For general element appearance.
-        *   `slideInFromRight/Left`: (Defined, can be used for more specific directional entries).
-        *   `pulse`: For highlighting interactive elements like the current progress step.
-        *   `shake`: Provides immediate visual feedback for invalid input fields.
-    *   **Interactive Elements:** Buttons and input fields feature hover and active/focus state transitions (e.g., transform, box-shadow changes, gradient shifts) for better user feedback.
+*   **Animasyonlar ve Geçişler:**
+    *   **Özel Keyframe Animasyonları:** Aşağıdaki gibi özel CSS keyframe animasyonlarını içerir:
+        *   `fadeIn`: 
+        *   `slideInFromRight/Left`
+        *   `pulse`: 
+        *   `shake`: 
+    *   **Etkileşimli Elemanlar:** Butonlar ve giriş alanları, daha iyi kullanıcı geri bildirimi için üzerine gelme (hover) ve aktif/odaklanma (active/focus) durumlarında geçişlere (örneğin, transform, kutu gölgesi değişiklikleri, gradyan kaymaları) sahiptir.
 
-*   **CSS Custom Properties (Variables):**
-    *   A comprehensive set of CSS variables (e.g., `--primary-color`, `--error-color`, `--border-radius`, `--box-shadow`) are defined at the `:root` level.
-    *   This allows for easy theming, consistent styling across the application, and simpler maintenance of the color palette and common dimensional values.
+*   **CSS Özel Özellikleri (Değişkenler - Variables):**
+    *   Kapsamlı bir CSS değişken seti (örneğin, `--primary-color`, `--error-color`, `--border-radius`, `--box-shadow`) `:root` seviyesinde tanımlanmıştır.
+    *   Bu, kolay tema oluşturma, uygulama genelinde tutarlı stil kullanımı ve renk paleti ile yaygın boyutsal değerlerin daha basit bakımını sağlar.
 
-*   **Enhanced User Experience (UX):**
-    *   **Clear Visual Hierarchy:** Appropriate use of headings, spacing, font weights, and distinct section styling.
-    *   **Input Feedback:** Input fields show distinct styles on focus and provide immediate visual feedback (border color, box-shadow, shake animation) for validation errors. Error messages are styled for clarity.
-    *   **Interactive Progress Bar:** The progress bar dynamically fills as the user advances through steps, with the current step clearly highlighted and animated with a `pulse` effect.
-
-
+*   **Gelişmiş Kullanıcı Deneyimi (UX):**
+    *   **Net Görsel Hiyerarşi:** Başlıkların, boşlukların, yazı tipi ağırlıklarının ve belirgin bölüm stillerinin uygun kullanımı.
+    *   **Giriş Geri Bildirimi:** Giriş alanları odaklandığında belirgin stiller gösterir ve doğrulama hataları için anında görsel geri bildirim (kenarlık rengi, kutu gölgesi, `shake` animasyonu) sağlar. Hata mesajları netlik için özel olarak stillendirilmiştir.
+    *   **Etkileşimli İlerleme Çubuğu:** Kullanıcı adımlarda ilerledikçe ilerleme çubuğu dinamik olarak dolar ve mevcut adım belirgin bir şekilde vurgulanır ve bir `pulse` efektiyle canlandırılır.
 
 
 
