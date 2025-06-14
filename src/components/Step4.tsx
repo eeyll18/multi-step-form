@@ -75,7 +75,7 @@ const Step4: React.FC<Step4Props> = ({ data }) => {
       <div className="review-section">
         <h3>Etkinlik Detayları</h3>
         <p>
-          <strong>Katılınacak Oturumlar:</strong>{" "}
+          <strong>Oturumlar:</strong>{" "}
           {getSessionLabels(data.sessions)}
         </p>
         <p>
