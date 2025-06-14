@@ -23,7 +23,7 @@ Bu proje, React, TypeScript ve Vite kullanılarak oluşturulmuş, modern, kullan
 *   **CSS**
 
 
-## 🎨 Styling & User Interface
+## Styling & User Interface
 
 The application's user interface is designed to be modern, responsive, and engaging, with a focus on providing a smooth user experience for the multi-step registration form.
 
